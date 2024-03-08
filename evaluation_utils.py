@@ -140,7 +140,7 @@ if __name__ == "__main__":
   text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
   splits = text_splitter.split_documents(document)
 
-  with open("./question_context_aristophanes.json", "r") as file:
+  with open("Datasets/question_context_aristophanes.json", "r") as file:
     eval_data = json.load(file)
 
   search = {
